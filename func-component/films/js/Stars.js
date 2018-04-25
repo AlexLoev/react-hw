@@ -1,5 +1,10 @@
 'use strict';
 
-function Stars() {
-  return <ul className="card-body-stars u-clearfix"><li><Star /></li></ul>;
+function Stars({count}) {
+  let stars = [];
+  for (let i = 0; i < count; i++) {
+    stars.push(<Star />)
+  }
+  
+  return <ul className="card-body-stars u-clearfix"><li>{stars}</li></ul>;
 }
