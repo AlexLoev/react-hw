@@ -96,7 +96,6 @@ class FeedbackForm extends React.Component {
     ];
 
     render() {
-        console.log('FeedbackForm render');
         return (
             <form className="content__form contact-form" onSubmit={this.handleSubmit}>
                 <div className="testing">
