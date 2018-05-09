@@ -1,4 +1,4 @@
-const Book = ({book, filterBooks}) => {
+const Book = ({ book, filterBooks }) => {
     let backgroundImage = book.imageLinks && `url(${book.imageLinks.thumbnail})`;
     let style = {
         width: 128,
@@ -8,12 +8,20 @@ const Book = ({book, filterBooks}) => {
     return (
         <div className="book">
             <div className="book-top">
-                <div className="book-cover" style={style}/>
+                <div className="book-cover" style={style} />
             </div>
             <div className="book-title">{book.title}</div>
-            {book.authors && 
+            {book.authors &&
                 <div className="book-authors">
-                    {book.authors.map(author => <button key={`book-${book.id}-${author}`} value={author} onClick={() => filterBooks(author)} className="book-author">{author}</button>)}
+                    {book.authors.map(author =>
+                        <button
+                            key={`book-${book.id}-${author}`}
+                            value={author}
+                            onClick={() => filterBooks(author)}
+                            className="book-author"
+                        >
+                            {author}
+                        </button>)}
                 </div>
             }
         </div>
