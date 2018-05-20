@@ -1,5 +1,5 @@
 const SearchBoxView = ({ fixed }) => (
-  <section className="container">
+  <section id="SearchBoxView" className="container">
     <div className="row">
       <div className="col-sm-12">
         <input
