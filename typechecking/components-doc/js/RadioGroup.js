@@ -22,7 +22,7 @@ RadioGroup.propTypes = {
   list: PropTypes.arrayOf(PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number
-  ])),
+  ])).isRequired,
   name: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   value: PropTypes.string,

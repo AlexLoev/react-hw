@@ -27,11 +27,13 @@ class App extends React.Component {
           first_name: 'Unknown',
           last_name: 'User',
           url: 'https://vk.com/id2',
+          birthday: '2018-05-20'
         },
         {
           first_name: 'Igor',
           last_name: 'Popov',
           url: 'https://vk.com/id17',
+          birthday: '2010-15-20'
         },
         {
           first_name: 'Oleg',
